@@ -20,7 +20,7 @@ a{
 }
 
 a:hover{
-    color: #EDF2F4;
+    color: rgb(141, 153, 174);
 }
 
 h1, h2{
@@ -39,46 +39,75 @@ h2{
 
 h3{
     font-weight: bold;
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .content-wrap{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
-    padding: 50px;
     overflow: auto;
+    padding: 60px 10px;
 }
 
-.col-narrow{
-    width: 30%;
-    float: left;
-    min-height: 175px;
+.button {
+   background: #EF233C; 
+   color: #EDF2F4;
+   padding: 10px;
+   display: inline-block;
 }
 
-.col-wide{
-    width:70%;
-    float: left;
-    min-height: 175px;
+/* Navigation
+============== */
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(27, 61, 112);
+}
+
+nav a:hover {
+    color: #EF233C;
+}
 
 /* Header and footer 
 =================== */
-header, footer{
-    background: #2B2D42;
-    color: #8D99AE; 
-}
-
 header h1, header h2{
     color: #EDF2F4;
     margin: 0;
 }
 
 header{
-    text-align: center;
+    padding-top: 50px; 
+    position: relative;
+    background: linear-gradient(rgba(27, 61, 112, 0.9), rgba(27, 61, 112, 0.9)), 
+                url(../images/computer-chip.jpg) center bottom no-repeat fixed;
+    background-size: cover;
+    color: white;
 }
 
 footer{
+    background: rgba(16, 36, 66, 0.9);
     text-align: center;
+    color: #8D99AE; 
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .contact-info a{
@@ -90,7 +119,6 @@ footer{
     width: 300px;
     border-radius: 50%;
     border: #EF233C;
-    margin-right: 30px;
 }
 
 /* Work Experience 
@@ -99,7 +127,51 @@ footer{
     background:#EDF2F4;
 }
 
-/* Education */
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description {
+    margin-bottom: 2.5rem;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+/* Education 
+===================*/
 .education{
-    background: #8D99AE;
+    background: rgb(141, 153, 174);
+    color: white;
+}
+
+p + h3 {
+    margin-top: 2.6rem;
+}
+
+/* Media Queries 
+===================*/
+@media (min-width: 900px){
+    /* Creates two column lay out (along with.col-wide) */
+    .col-narrow{
+        width: 30%;
+        float: left;
+    }
+    
+    .col-wide{
+        width:70%;
+        float: left;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 899px){
+    header{
+        text-align: center;
+    }
+
+    .profile-img{
+        width: 200px;
+    }
 }

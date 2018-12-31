@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Lubin | Resume</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+QingKe+HuangYou" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- // Intro -->
-    <header>
+    <header id="about">
         <div class="content-wrap">
             <img src="images/profile-picture.jpg" alt="James Lubin" class="profile-img col-narrow">
             <div class="col-wide">
@@ -23,11 +24,18 @@
                 </p>
             </div>
         </div>
+        <a href="resume.pdf" class="button download" download>Download PDF</a>
+        <nav>
+            <a href="">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     
     <main> 
         <!-- // Work Experience -->
-        <section class="work">
+        <section class="work" id="work">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
 
@@ -40,7 +48,7 @@
                 </div>
                 
                 
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <!-- Add as many paragraphs as you need. -->
                     <p>Bring to the table win-win survival strategies to ensure proactive domination.</p>
                     
@@ -61,7 +69,7 @@
                     <p>May 2017 - August 2017</p>
                 </div>
                 
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <!-- Add as many paragraphs as you need. -->
                     <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p>
                     
@@ -81,14 +89,15 @@
                     <p>July 2015 - September 2015</p>
                 </div>
                 
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <!-- Add as many paragraphs as you need. -->
                     <p>Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
                     
                     <!-- This list can be deleted if you don't want to use it. -->
                     <p>Key Contributions:</p>
                     <ul>
-                        <li>Created and managed websites with other developers both locally and remotely, for 5 clients using HTML, CSS, and
+                        <li>
+                            Created and managed websites with other developers both locally and remotely, for 5 clients using HTML, CSS, and
                             Wordpress
                         </li>
                     </ul>
@@ -98,9 +107,8 @@
             
         </section>
 
-
         <!-- // Education -->
-        <section class="education">
+        <section class="education" id="education">
             <div class="content-wrap">
                 <h2>Education</h2>
 
@@ -116,18 +124,31 @@
     </main>
     
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
         <div class="content-wrap">
             <h2>Contact me</h2>
             
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
-                <a href="mailto:james.a.lubin@gmail.com">james.a.lubin@gmail.com</a>
-                <a href="https://twitter.com/jlubin22" target="_blank">Twitter</a>
-                <a href="https://www.linkedin.com/in/james-lubin" target="_blank">LinkedIn</a>
-                <a href="https://github.com/james-lubin/" target="_blank">Github</a>
-            </div>
+                <a href="mailto:james.a.lubin@gmail.com">
+                    <i aria-hidden class="fas fa-envelope"></i>
+                    <span class="sr-only">james.a.lubin@gmail.com</span>
+                </a>
 
+                <a href="https://twitter.com/jlubin22" target="_blank">
+                    <i aria-hidden class="fab fa-twitter"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com/in/james-lubin" target="_blank">
+                    <i aria-hidden class="fab fa-linkedin-in"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/james-lubin/" target="_blank">
+                    <i aria-hidden class="fab fa-github"></i>
+                    <span class="sr-only">Github</span>
+                </a>
+            </div>
             <p>&copy; 2018 by James Lubin</p>
         </div>
     </footer>
