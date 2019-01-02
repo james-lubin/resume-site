@@ -116,9 +116,7 @@ footer{
 }
 
 .profile-img{
-    width: 300px;
     border-radius: 50%;
-    border: #EF233C;
 }
 
 /* Work Experience 
@@ -158,6 +156,10 @@ p + h3 {
         width: 30%;
         float: left;
     }
+
+    .col-narrow.profile-img{
+        width: 250px;
+    }
     
     .col-wide{
         width:70%;
@@ -169,6 +171,10 @@ p + h3 {
 @media (max-width: 899px){
     header{
         text-align: center;
+    }
+
+    .content-wrap .col-narrow{
+        margin-top: 40px;
     }
 
     .profile-img{
